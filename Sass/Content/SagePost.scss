@@ -1,0 +1,361 @@
+﻿//Define the custom font location
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Roboto Slab Bold';
+    src: url('../content/fonts/RobotoSlab-Bold.ttf') format('truetype');
+  }
+}
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Roboto Slab Regular';
+    src: url('../content/fonts/RobotoSlab-Regular.ttf') format('truetype');
+  }
+}
+
+
+// Within heading, strip any `h*` tag of its default margins for spacing.
+.panel-title {
+  font-size: ceil(($font-size-base * 1.42)); //ceil(($font-size-base * 1.125));
+  color: $text-color; //inherit;
+}
+
+
+.input-group-full-width{
+    width: 100%;
+}
+
+h1, .h1 { font-family: $font-family-bold; }
+
+#pcont {
+    
+    .btn-default, .btn-primary{
+        margin: 15px;
+        border: 2px solid; 
+        padding: 15px 50px 15px 50px
+    }
+    @media (min-width: $screen-sm-max){
+        .cl-mcont{
+            padding-left: 100px; 
+            padding-right: 100px;
+        }
+    }
+
+}
+
+.btn {
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+        opacity: .30 !important;
+        // IE8 filter
+        $opacity-ie: (.30 * 100);
+        filter: alpha(opacity=$opacity-ie)  !important;
+  }
+}
+
+@if ($navbar-default-use-gradient) {
+    .navbar-default {
+        @include gradient-horizontal($navbar-default-bg, $navbar-default-bg-endcolor, 0%, 100%);
+    }
+} 
+
+.cl-mcont {
+    @include gradient-vertical(#F4F4F4, #E0EEF2, 0%, 100%);
+}
+
+.font-family-bold{
+    font-family: $font-family-bold;
+}
+
+.glyphicon.glyphicon-one-fine-full-dot {
+    margin-bottom: .15em;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.glyphicon.glyphicon-one-fine-full-dot:before {
+    content:"\25cf";
+    font-size: 1em;
+}
+
+.full-dot-primary{
+    color: $brand-primary;
+}
+
+.full-dot-success{
+    color: $brand-success;
+}
+
+.full-dot-info{
+    color: $brand-info;
+}
+
+.full-dot-warning{
+    color: $brand-warning;
+}
+
+.full-dot-danger{
+    color: $brand-danger;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+.borderless, .borderless li {
+    border: none !important;
+}
+
+.navbar-nav {
+    > .active > a {
+        &,
+        &:hover,
+        &:focus {
+        font-family: $font-family-bold;
+        background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+        background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+        background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+        }
+    }
+    // background color for open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        font-family: $font-family-bold;
+        background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) 100%)  !important;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) 100%)  !important;
+        background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) 100%)  !important;
+        background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) 100%)  !important;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) 100%)  !important;
+
+      }
+    }
+}
+
+
+/*Bubble*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Above, the asterisk selects all elements in the HTML document and rests the margin and padding. This ensures that any of the annoying "default" margin and paddings a browser might have will be reset to zero. */
+
+.noti_Container {
+    position:relative;     /* This is crucial for the absolutely positioned element */
+    width:48px;
+    height:48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+
+}
+.noti_bubble {
+    position:absolute;    /* This breaks the div from the normal HTML document. */
+    top: -1px;
+    right:33px;
+    /*padding:1px 2px 1px 2px;*/
+    background-color:red; /* you could use a background image if you'd like as well */
+    color:white;
+    font-weight:bold;
+    font-size:0.45em;
+
+    /* The following is CSS3, but isn't crucial for this technique to work. */
+    /* Keep in mind that if a browser doesn't support CSS3, it's fine! They just won't have rounded borders and won't have a box shadow effect. */
+    /* You can always use a background image to produce the same effect if you want to, and you can use both together so browsers without CSS3 still have the rounded/shadow look. */
+    border-radius:20px;
+    width: 20px;
+    line-height: 20px;
+    box-shadow:1px 1px 1px gray;
+    text-align: center;
+}
+
+
+/*main dashboard*/
+
+@media (max-width: $screen-sm-max){
+    .dashboard-section{
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+    .noti_Container{
+        display: none;
+        width:0;
+        height:0;
+    }
+}
+
+
+.dashboard-section > .block-flat > .header > h3.with-icon{
+    height: 48px; // height of image
+    vertical-align: middle;
+    line-height: 48px;
+    background-repeat: no-repeat !important;
+}
+
+/*address some padding source nano scroller isnt too tight a fit*/
+.dashboard-section .content{
+    
+    height: 200px;
+    > .nano > .nano-content{
+        padding: 5px;
+    }
+}
+
+.dashboard-section > .block-flat > .header > h3.with-icon{
+    text-indent: 52px;
+}
+
+.review > .block-flat > .header > h3{
+    background: url($image-font-path + 'checkbox-marked-outline_REVIEWS.png'); 
+}
+
+/*.messages > .block-flat > .header > h3{
+    background: url($image-font-path + 'comment-text-outline_MESSAGES.png'); 
+}*/
+    
+.messages > .block-flat > .header > h3 > .noti_Container{
+    background: url($image-font-path + 'comment-text-outline_MESSAGES.png'); 
+}
+
+.scoring-tools > .block-flat > .header > h3{
+    background: url($image-font-path + 'star-half_SCORING TOOLS.png'); 
+}
+
+.recent-items > .block-flat > .header > h3{
+    background: url($image-font-path + 'clock_RECENT ITEMS.png'); 
+}
+
+.fund-list > .block-flat > .header > h3{
+    background: url($image-font-path + 'chart-bar_FUNDS.png'); 
+}
+
+.whats-new > .block-flat > .header > h3{
+    background: url($image-font-path + 'plus_ADD ICON.png'); 
+}
+
+.reports > .block-flat > .header > h3{
+    background: url($image-font-path + 'chart-bar_FUNDS.png'); 
+}
+
+.fund-lookup > .block-flat > .header > h3{
+    background: url($image-font-path + 'chart-bar_FUNDS.png'); 
+}
+
+
+ @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+.dashboard-section > .block-flat > .header > h3.with-icon{
+    text-indent: 0;
+}
+
+.review > .block-flat > .header > h3{
+    background: none;
+}
+
+/*.messages > .block-flat > .header > h3{
+    background: none;
+}*/
+    
+.messages > .block-flat > .header > h3 > .noti_Container{
+    background: none;
+}
+
+.scoring-tools > .block-flat > .header > h3{
+    background: none;
+}
+
+.recent-items > .block-flat > .header > h3{
+    background: none;
+}
+
+.fund-list > .block-flat > .header > h3{
+    background: none; 
+}
+
+.whats-new > .block-flat > .header > h3{
+    background: none;
+}
+
+.reports > .block-flat > .header > h3{
+    background: none;
+}
+
+.fund-lookup > .block-flat > .header > h3{
+    background: none; 
+}
+    
+}
+/*end main dashboard*/
+
+/*Menu*/
+
+    .menu-icon{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+        display: inline-block;
+        top: 5px;
+        position : relative;
+    }
+    .menu-review{
+        background: url($image-font-path + '/white/checkbox-marked-outline_REVIEWS.png') left center/24px 24px no-repeat; 
+    }
+    .menu-home{
+        background: url($image-font-path + '/white/home_HOME.png') left center/24px 24px no-repeat; 
+    }
+    .menu-reports{
+        background: url($image-font-path + '/white/chart-bar_FUNDS.png') left center/24px 24px no-repeat; 
+    }
+    .menu-fundresearch{
+        background: url($image-font-path + '/white/chart-bar_FUNDS.png') left center/24px 24px no-repeat; 
+    }
+    .menu-plans{
+        background: url($image-font-path + '/white/chart-bar_FUNDS.png') left center/24px 24px no-repeat; 
+    }
+    .menu-proposals{
+        background: url($image-font-path + '/white/chart-bar_FUNDS.png') left center/24px 24px no-repeat; 
+    }
+    .menu-administration{
+        background: url($image-font-path + '/white/chart-bar_FUNDS.png') left center/24px 24px no-repeat; 
+    }
+    .menu-fees{
+        background: url($image-font-path + '/white/chart-bar_FUNDS.png') left center/24px 24px no-repeat; 
+    }     
+
+
+
+/*end menu*/
+
+/*input placeholder*/
+input {border: 1px solid #F8F6F9 !important}
+
+::-webkit-input-placeholder {
+   color: $gray-light !important;
+   font-style: italic;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gray-light !important;
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray-light !important;
+   font-style: italic;
+
+}
+
+:-ms-input-placeholder {  
+   color: $gray-light !important;
+   font-style: italic;
+}
+/*end input placeholder*/

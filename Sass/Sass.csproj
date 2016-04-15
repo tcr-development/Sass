@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80F04207-9A96-436E-9C92-09286B9183FE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sass</RootNamespace>
+    <AssemblyName>Sass</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\babel-options.js" />
+    <Content Include="build\paths.js" />
+    <Content Include="build\tasks\build.js" />
+    <Content Include="build\tasks\bundle.js" />
+    <Content Include="build\tasks\clean.js" />
+    <Content Include="build\tasks\copy-typings.js" />
+    <Content Include="build\tasks\watch.js" />
+    <Content Include="build\typescript-options.js" />
+    <Content Include="Content\CleanZoneMenu.scss" />
+    <Content Include="gulpfile.js" />
+    <Content Include="packages.config" />
+    <Content Include="src\content\fonts\font-awesome-4\css\font-awesome.css" />
+    <Content Include="src\content\fonts\font-awesome-4\css\font-awesome.min.css" />
+    <Content Include="src\content\fonts\font-awesome-4\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\content\images\bell_ALERTS.png" />
+    <Content Include="src\content\images\border-color_COMPOSE MESSAGE.png" />
+    <Content Include="src\content\images\calendar-plus_ADD CAL EVENT.png" />
+    <Content Include="src\content\images\chart-bar_FUNDS.png" />
+    <Content Include="src\content\images\checkbox-marked-outline_REVIEWS.png" />
+    <Content Include="src\content\images\clock_RECENT ITEMS.png" />
+    <Content Include="src\content\images\comment-text-outline_MESSAGES.png" />
+    <Content Include="src\content\images\favicon.png" />
+    <Content Include="src\content\images\home_HOME.png" />
+    <Content Include="src\content\images\logo.png" />
+    <Content Include="src\content\images\menu_HAMBURGER MENU.png" />
+    <Content Include="src\content\images\plus_ADD ICON.png" />
+    <Content Include="src\content\images\REPORTS.png" />
+    <Content Include="src\content\images\star-half_SCORING TOOLS.png" />
+    <Content Include="src\javascripts\intro.js\intro.js" />
+    <Content Include="src\javascripts\intro.js\introjs.css" />
+    <Content Include="src\javascripts\sage\general.js" />
+    <Content Include="Index.html" />
+    <Content Include="build\bundles.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="package.json" />
+    <Content Include="Content\SageDefaults.scss" />
+    <Content Include="Content\SagePost.scss" />
+    <Content Include="Content\app.scss" />
+    <Content Include="src\content\images\.keep" />
+    <Content Include="src\content\fonts\font-awesome-4\fonts\fontawesome-webfont.eot" />
+    <Content Include="src\content\fonts\font-awesome-4\fonts\fontawesome-webfont.ttf" />
+    <Content Include="src\content\fonts\font-awesome-4\fonts\fontawesome-webfont.woff" />
+    <Content Include="src\content\fonts\font-awesome-4\fonts\FontAwesome.otf" />
+    <Content Include="src\content\fonts\font-awesome-4\less\bordered-pulled.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\core.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\fixed-width.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\font-awesome.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\icons.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\larger.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\list.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\mixins.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\path.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\rotated-flipped.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\spinning.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\stacked.less" />
+    <Content Include="src\content\fonts\font-awesome-4\less\variables.less" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\font-awesome.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_bordered-pulled.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_core.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_fixed-width.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_icons.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_larger.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_list.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_mixins.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_path.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_rotated-flipped.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_spinning.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_stacked.scss" />
+    <Content Include="src\content\fonts\font-awesome-4\scss\_variables.scss" />
+    <Content Include="src\content\fonts\RobotoSlab-Bold.ttf" />
+    <Content Include="src\content\fonts\RobotoSlab-Regular.ttf" />
+    <Content Include="src\content\images\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10025</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10025/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
