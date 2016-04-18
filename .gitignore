@@ -209,3 +209,5 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/Sass/dist
+/Sass.sln.GhostDoc.xml
