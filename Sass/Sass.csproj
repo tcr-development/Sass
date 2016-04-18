@@ -94,8 +94,6 @@
     <Content Include="src\content\images\plus_ADD ICON.png" />
     <Content Include="src\content\images\REPORTS.png" />
     <Content Include="src\content\images\star-half_SCORING TOOLS.png" />
-    <Content Include="src\javascripts\intro.js\intro.js" />
-    <Content Include="src\javascripts\intro.js\introjs.css" />
     <Content Include="src\javascripts\sage\general.js" />
     <Content Include="Index.html" />
     <Content Include="build\bundles.json" />
@@ -149,6 +147,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="StyleGuide.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>WealthStation | PlanAdvisor</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="dist/css/app.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://tagliala.github.io/vectoriconsroundup/css/materialdesignicons.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="dist/css/nanoscroller.css" />
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="fa fa-gear"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="text-nowrap"><span class="wealthstation">WealthStation</span> | <strong>PlanAdvisor</strong></span></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right user-nav">
+                    <li class="dropdown profile_menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-user"></i>&nbsp;&nbsp;Jeff Hanneman</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Messages</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right not-nav">
+                    <li class="button dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-comments"></i></a>
+                        <ul class="dropdown-menu messages">
+                            <li>
+                                <div class="nano nscroller">
+                                    <div class="content nano-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i><span class="date pull-right">13 Sept.</span> <span class="name">Daniel</span> I'm following you, and I want your money!
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i><span class="date pull-right">20 Oct.</span><span class="name">Adam</span> is now following you
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i><span class="date pull-right">2 Nov.</span><span class="name">Michael</span> is now following you
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i><span class="date pull-right">2 Nov.</span><span class="name">Lucy</span> is now following you
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="foot"><li><a href="#">View all messages </a></li></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="button dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span class="bubble">2</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="nano nscroller ">
+                                    <div class="content nano-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-cloud-upload info"></i><b>Daniel</b> is now following you <span class="date">2 minutes ago.</span></a></li>
+                                            <li><a href="#"><i class="fa fa-male success"></i> <b>Michael</b> is now following you <span class="date">15 minutes ago.</span></a></li>
+                                            <li><a href="#"><i class="fa fa-bug warning"></i> <b>Mia</b> commented on post <span class="date">30 minutes ago.</span></a></li>
+                                            <li><a href="#"><i class="fa fa-credit-card danger"></i> <b>Andrew</b> killed someone <span class="date">1 hour ago.</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="foot"><li><a href="#">View all activity </a></li></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="javascript:;" class="speech-button"><i class="fa fa-microphone"></i></a></li>
+                </ul>
+            </div><!--/.nav-collapse animate-collapse -->
+        </div>
+    </div>
+
+    <div id="cl-wrapper" class="fixed-menu">
+        <div class="cl-sidebar" data-position="right" data-step="1" data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">
+            <div class="cl-toggle"><i class="fa fa-bars"></i></div>
+            <div class="cl-navblock">
+                <div class="menu-space">
+                    <div class="content nano-content">
+                        <ul class="cl-vnavigation">
+                            <li><a href="Index.html"><span class="menu-icon menu-home"></span><span>Home</span></a></li>
+                            <li><a href="StyleGuide.html"><span class="menu-icon menu-administration"></span><span>Style Guide</span></a></li>
+                            <li><a href="Admin.html"><span class="menu-icon menu-administration"></span><span>Administration</span></a></li>
+                            <li><a href="Fees.html"><span class="menu-icon menu-fees"></span><span>Fees</span></a></li>
+                            <li><a href="FundResearch.html"><span class="menu-icon menu-fundresearch"></span><span>Fund Research</span></a></li>
+                            <li><a href="Plans.html"><span class="menu-icon menu-plans"></span><span>Plans</span></a></li>
+                            <li><a href="Proposals.html"><span class="menu-icon menu-proposals"></span><span>Proposals</span></a></li>
+                            <li>
+                                <a href="Reports.html"><span class="menu-icon menu-reports"></span><span>Reports</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="Templates.html">Templates</a></li>
+                                    <li><a href="Files.html">Files</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-right collapse-button" style="padding:7px 9px;">
+                    <input type="text" class="form-control search" placeholder="Search..." />
+                    <button id="sidebar-collapse" class="btn btn-default" style=""><i style="color:#fff;" class="fa fa-angle-left"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="pcont">
+            <div class="cl-mcont">
+                <h1>Style Guide</h1>
+
+                <div class="row">
+                    <div>
+                        <div class="block-flat">
+                            <div class="header">
+                                <h3>.header H3</h3>
+                            </div>
+                            <table class="table">
+                                <tr><th>Feature</th><th>Font Awesome</th><th>Material Design</th></tr>
+                                <tr><td>My Account</td><td><i class="fa fa-fw fa-user"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>Users</td><td><i class="fa fa-fw fa-users"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>Messages</td><td><i class="fa fa-fw fa-comment-o"></i></td><td><i class="mdi mdi-comment-text-outline"></i></td></tr>
+                                <tr><td>Fees</td><td><i class="fa fa-fw fa-bank"></i></td><td><i class="mdi mdi-bank"></i></td></tr>
+                                <tr><td>Fund Lists</td><td><i class="fa fa-fw fa-list-alt"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>Reviews</td><td><i class="fa fa-fw fa-check-square-o"></i></td><td><i class="mdi mdi-checkbox-marked-outline"></i></td></tr>
+                                <tr><td>Reports</td><td><i class="fa fa-fw fa-bar-chart-o"></i></td><td><i class="mdi mdi-chart-areaspline"></i></td></tr>
+                                <tr><td>Scoring Tools</td><td><i class="fa fa-fw fa-star-half-full"></i></td><td><i class="mdi mdi-star-half"></i></td></tr>
+                                <tr><td>Templates</td><td><i class="fa fa-fw fa-object-group"></i></td><td><i class="mdi mdi-format-list-numbers"></i></td></tr>
+                                <tr><td>Files</td><td><i class="fa fa-fw fa-files-o"></i></td><td><i class="mdi mdi-file"></i></td></tr>
+                                <tr><td>Proposals</td><td><i class="fa fa-fw fa-briefcase"></i></td><td><i class="mdi mdi-briefcase"></i></td></tr>
+                                <tr><td>Chat</td><td><i class="fa fa-fw fa-microphone"></i></td><td><i class="mdi mdi-microphone"></i></td></tr>
+                                <tr><td>Fund Lookup</td><td><i class="fa fa-fw fa-search"></i></td><td><i class="mdi mdi-binoculars"></i></td></tr>
+                                <tr><td>Plans</td><td><i class="fa fa-fw fa-cubes"></i></td><td><i class="mdi mdi-package-variant"></i></td></tr>
+                                <tr><td>Whats New</td><td><i class="fa fa-fw fa-asterisk"></i></td><td><i class="mdi mdi-package-plus"></i></td></tr>
+                                <tr><td>Close</td><td><i class="fa fa-fw fa-close"></i></td><td><i class="mdi mdi-close"></i></td></tr>
+                                <tr><td>Edit</td><td><i class="fa fa-fw fa-edit"></i></td><td><i class="mdi mdi-pencil"></i></td></tr>
+                                <tr><td>Delete</td><td><i class="fa fa-fw fa-trash-o"></i></td><td><i class="mdi mdi-delete"></i></td></tr>
+                                <tr><td>Done</td><td><i class="fa fa-fw fa-check"></i></td><td><i class="mdi mdi-check"></i></td></tr>
+                                <tr><td>Logout</td><td><i class="fa fa-fw fa-sign-out"></i></td><td><i class="mdi mdi-logout"></i></td></tr>
+                                <tr><td>Login</td><td><i class="fa fa-fw fa-sign-in"></i></td><td><i class="mdi mdi-login"></i></td></tr>
+                                <tr><td>Half-star</td><td><i class="fa fa-fw fa-star-half-full"></i></td><td><i class="mdi mdi-star-half"></i></td></tr>
+                                <tr><td>Full star</td><td><i class="fa fa-fw fa-star"></i></td><td><i class="mdi mdi-star"></i></td></tr>
+                                <tr><td>No star</td><td><i class="fa fa-fw fa-star-o"></i></td><td><i class="mdi mdi-star-outline"></i></td></tr>
+                                <tr><td>Recent items</td><td><i class="fa fa-fw fa-circle-o-notch"></i></td><td><i class="mdi mdi-clock"></i></td></tr>
+                                <tr><td>Find</td><td><i class="fa fa-fw fa-binoculars"></i></td><td><i class="mdi mdi-binoculars"></i></td></tr>
+                                <tr><td>Search</td><td><i class="fa fa-fw fa-search"></i></td><td><i class="mdi mdi-search"></i></td></tr>
+                                <tr><td>Gear icons</td><td><i class="fa fa-fw fa-cog"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>fa-envelope</td><td><i class="fa fa-fw fa-envelope"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>file-pdf-o</td><td><i class="fa fa-fw fa-file-pdf-o"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>fa-gear</td><td><i class="fa fa-fw fa-gear"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>line-chart</td><td><i class="fa fa-fw fa-line-chart"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>list-alt</td><td><i class="fa fa-fw fa-list-alt"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>navicon</td><td><i class="fa fa-fw fa-navicon"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>bars</td><td><i class="fa fa-fw fa-bars"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>pie-chart</td><td><i class="fa fa-fw fa-pie-chart"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>sliders</td><td><i class="fa fa-fw fa-sliders"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>database</td><td><i class="fa fa-fw fa-database"></i></td><td><i class="mdi mdi-database"></i></td></tr>
+                                <tr><td>toggle-on</td><td><i class="fa fa-fw fa-toggle-on"></i></td><td><i class="mdi "></i></td></tr>
+                                <tr><td>toggle-off</td><td><i class="fa fa-fw fa-toggle-off"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>area-chart</td><td><i class="fa fa-fw fa-area-chart"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>balance-scale</td><td><i class="fa fa-fw fa-balance-scale"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>calendar-o</td><td><i class="fa fa-fw fa-calendar-o"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>calendar-check-o</td><td><i class="fa fa-fw fa-calendar-check-o"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>calendar</td><td><i class="fa fa-fw fa-calendar"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr><td>calendar-calculator</td><td><i class="fa fa-fw fa-calculator"></i></td><td><i class="mdi"></i></td></tr>
+                                <tr>
+                                    <td>stack</td>
+                                    <td>
+                                        <span class="fa-stack">
+                                            <i class="fa fa-fw fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-fw fa-database fa-stack-1x"></i>
+                                        </span>
+                                    </td>
+                                    <td><i class="mdi"></i></td>
+                                </tr>
+
+                            </table>
+                            <div class="content">
+                                <div>
+                                    <h1>Headline</h1>
+                                </div>
+                                <div>
+                                    <h2>Title</h2>
+                                </div>
+                                <div>
+                                    <h3>Subheader</h3>
+                                </div>
+                                <div>
+                                    Body
+                                </div>
+                                <h1>H1</h1>
+                                <h2>H2</h2>
+                                <h3>H3</h3>
+                                <h4>H4</h4>
+                                <h5>H5</h5>
+                                <h6>H6</h6>
+                                <p>Body1</p>
+                                <div>
+                                    Disabled buttons
+                                    <fieldset disabled="disabled">
+                                        <button type="button" class="btn btn-default">YAS!</button>
+                                        <button type="button" class="btn btn-primary">NAH</button>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button type="button" class="btn btn-default" disabled="disabled">YAS!</button>
+                                        <button type="button" class="btn btn-primary" disabled="disabled">NAH</button>
+                                    </fieldset>
+                                    Disabled div button class
+                                    <fieldset disabled="disabled">
+                                        <div class="btn btn-default">YAS!</div>
+                                        <div class="btn btn-primary">NAH</div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="btn btn-default" disabled="disabled">YAS!</div>
+                                        <div class="btn btn-primary" disabled="disabled">NAH</div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    Enabled buttons
+                                    <fieldset>
+                                        <button type="button" class="btn btn-default">YAS!</button>
+                                        <button type="button" class="btn btn-primary">NAH</button>
+                                    </fieldset>
+                                    Enabled div button class
+                                    <fieldset>
+                                        <div class="btn btn-default">YAS!</div>
+                                        <div class="btn btn-primary">NAH</div>
+                                    </fieldset>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="dist/javascripts/jquery-1.10.0.js"></script>
+<script type="text/javascript" src="dist/javascripts/jquery.nanoscroller.js"></script>
+<script type="text/javascript" src="dist/javascripts/sage/general.js"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript">
+            $(document).ready(function () {
+                //initialize the javascript
+                App.init();
+
+                //This is the tour code
+                //introJs().setOption('showBullets', false).start();
+
+            });
+</script>
+<script src="dist/javascripts/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
