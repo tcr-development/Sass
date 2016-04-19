@@ -536,7 +536,7 @@ body.modal-open,
   margin: 0;
   font-size: 17px;
 }
-.sb-collapsed .cl-vnavigation > li > a > span {
+.sb-collapsed .cl-vnavigation > li > a > span:last-of-type {
   opacity: 0;
   width: 0;
   height: 0;
