@@ -686,6 +686,13 @@ body.modal-open,
     height: 0;
     display: none;
 }
+.sub-menu .dropdown-header span.menu-icon{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
 .sub-menu .dropdown-header {
     color: #c0c0c0;
     border-bottom: 1px solid #c0c0c0;
