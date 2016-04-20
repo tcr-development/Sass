@@ -32,7 +32,7 @@
 h1, .h1 { font-family: $font-family-bold; }
 
 #pcont {
-    
+    @include gradient-vertical(#F4F4F4, #E0EEF2, 0%, 100%);
     .btn-default, .btn-primary{
         margin: 15px;
         border: 2px solid; 
@@ -65,7 +65,8 @@ h1, .h1 { font-family: $font-family-bold; }
 } 
 
 .cl-mcont {
-    @include gradient-vertical(#F4F4F4, #E0EEF2, 0%, 100%);
+    background: none;
+    background-color: transparent !important;
 }
 
 .font-family-bold{
@@ -180,11 +181,11 @@ h1, .h1 { font-family: $font-family-bold; }
 
 /*main dashboard*/
 
-@media (max-width: $screen-sm-max){
+/*@media (max-width: $screen-sm-max){*/
     .dashboard-section{
-        margin-top: 15px;
+        margin-top: 7px;
     }
-}
+
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
     .noti_Container{
@@ -203,10 +204,42 @@ h1, .h1 { font-family: $font-family-bold; }
     text-indent: 52px;
 }
 
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+    .dashboard-section .content{
+        height: 300px;
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    .sm100{
+        width: 100%;
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    .dashboard-section .content{
+        height: 300px;
+    }
+    .md100{
+        width: 100%;
+    }
+}
+@media (min-width: $screen-lg-min){
+    .lg100{
+        width: 100%;
+    }
+}
+@media (min-width: $screen-lg-min){
+    .dashboard-section .content{
+        height: 260px;
+    }
+}
+
+
+
+
 /*address some padding source nano scroller isnt too tight a fit*/
 .dashboard-section .content{
-    
-    height: 260px;
     > .nano > .nano-content{
         padding: 5px;
     }
