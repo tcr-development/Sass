@@ -40,8 +40,8 @@ h1, .h1 { font-family: $font-family-bold; }
     }
     @media (min-width: $screen-sm-max){
         .cl-mcont{
-            padding-left: 100px; 
-            padding-right: 100px;
+            padding-left: 80px; 
+            padding-right: 80px;
         }
     }
 
@@ -369,7 +369,9 @@ h1, .h1 { font-family: $font-family-bold; }
 /*end menu*/
 
 /*input placeholder*/
-input {border: 1px solid #F8F6F9 !important}
+.idliketo-search > input {
+    border: 1px solid #F8F6F9 !important
+}
 
 ::-webkit-input-placeholder {
    color: $gray-light !important;
