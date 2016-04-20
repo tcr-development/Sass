@@ -517,7 +517,12 @@ body.modal-open,
   white-space: nowrap;
 }
 .cl-vnavigation li a:hover {
-  background-color: #2a2c34;
+  /*background-color: #2a2c34;*/
+      background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
 }
 /*Collapsed Sidebar*/
 .sb-collapsed .cl-sidebar {
@@ -567,9 +572,10 @@ body.modal-open,
 }
 .cl-sidebar .collapse-button {
   background: #1F2126;
-  position: fixed;
   width: 216px;
-  bottom: 0;
+  /*Mopved from bottom to top*/
+  /*position: fixed;*/
+  /*bottom: 0;*/
   border-top: 1px solid #131519;
   box-shadow: 0 1px 0 #2A2C31 inset;
 }
@@ -592,7 +598,14 @@ body.modal-open,
   border-radius: 2px;
 }
 .cl-sidebar .collapse-button button:hover {
-  background: #23252A;
+  /*background: #23252A;*/
+  /*possibly need a custom mixin*/
+    background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+
 }
 #cl-wrapper.fixed-menu .menu-space {
   position: fixed;
@@ -651,16 +664,26 @@ body.modal-open,
 .sb-collapsed .cl-vnavigation li.open ul {
   display: none !important;
 }
+/* Hide the menu icon on the fly out sub menu, its still on the sidebar*/
+.sub-menu .dropdown-header i{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.sub-menu .dropdown-header {
+    color: #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
 #sub-menu-nav ul {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.22);
-  color: #333;
-  background: #FFF;
+  color: $navbar-default-color;
+  background: #272930;
   padding: 5px 0;
   min-width: 190px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-top: 0;
-  border-radius: 3px;
+  /*border-radius: 3px;*/
 }
 #sub-menu-nav ul li:first-child {
   padding-top: 0;
@@ -687,15 +710,20 @@ body.modal-open,
   display: block;
   font-size: $font-size-small;
   border-bottom: 0;
-  color: #333333;
+  color: $navbar-default-color;
   text-shadow: none;
   text-align: left;
   background: transparent;
   padding: 6px 20px 6px 31px;
 }
 #sub-menu-nav ul li a:hover {
-  background-color: #2391ED;
-  color: #FFF;
+  /*background-color: #2391ED;*/
+  color: $navbar-default-color;
+      background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
 }
 #sub-menu-nav ul:after {
   background: url(../images/menu-tail-left.png) no-repeat right 10px;

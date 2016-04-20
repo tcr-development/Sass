@@ -200,6 +200,7 @@ h1, .h1 { font-family: $font-family-bold; }
     vertical-align: middle;
     line-height: 48px;
     background-repeat: no-repeat !important;
+    text-indent: 52px;
 }
 
 /*address some padding source nano scroller isnt too tight a fit*/
@@ -211,9 +212,6 @@ h1, .h1 { font-family: $font-family-bold; }
     }
 }
 
-.dashboard-section > .block-flat > .header > h3.with-icon{
-    text-indent: 52px;
-}
 
 .review > .block-flat > .header > h3{
     background: url($image-font-path + 'checkbox-marked-outline_REVIEWS.png'); 

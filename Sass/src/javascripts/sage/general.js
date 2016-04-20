@@ -158,12 +158,14 @@ var App = function () {
             }
             
             tool.appendTo("body");
-            var top = ($(_this).offset().top + 8) - $(window).scrollTop();
+            //var top = ($(_this).offset().top + 8) - $(window).scrollTop();
+            var top = ($(_this).offset().top) - $(window).scrollTop();
             var left = $(_this).width();
             
             tool.css({
-              'top': top,
-              'left': left + 8
+               'top': top,
+               'left': left
+              //'left': left + 8
             });
             tool.html('<ul class="sub-menu">' + menu.html() + '</ul>');
             tool.show();
