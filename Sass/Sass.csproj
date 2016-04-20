@@ -75,6 +75,7 @@
     <Content Include="build\tasks\watch.js" />
     <Content Include="build\typescript-options.js" />
     <Content Include="Content\CleanZoneMenu.scss" />
+    <Content Include="Dashboard.html" />
     <Content Include="gulpfile.js" />
     <Content Include="packages.config" />
     <Content Include="src\content\fonts\font-awesome-4\css\font-awesome.css" />

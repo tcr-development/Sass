@@ -44,7 +44,6 @@ h1, .h1 { font-family: $font-family-bold; }
             padding-right: 80px;
         }
     }
-
 }
 
 .btn {
@@ -195,13 +194,25 @@ h1, .h1 { font-family: $font-family-bold; }
     }
 }
 
+.dashboard-section > .block-flat > .header > h3.with-image-icon{
+    height: 48px; // height of image
+    vertical-align: middle;
+    line-height: 48px;
+    background-repeat: no-repeat !important;
+    text-indent: 52px;
+}
 
 .dashboard-section > .block-flat > .header > h3.with-icon{
     height: 48px; // height of image
     vertical-align: middle;
     line-height: 48px;
     background-repeat: no-repeat !important;
-    text-indent: 52px;
+    i {
+        font-size: 32px !important;
+    }
+    .noti_bubble{
+        right:25px !important;
+    }
 }
 
 @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
@@ -246,7 +257,7 @@ h1, .h1 { font-family: $font-family-bold; }
 }
 
 
-.review > .block-flat > .header > h3{
+.review > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'checkbox-marked-outline_REVIEWS.png'); 
 }
 
@@ -254,75 +265,39 @@ h1, .h1 { font-family: $font-family-bold; }
     background: url($image-font-path + 'comment-text-outline_MESSAGES.png'); 
 }*/
     
-.messages > .block-flat > .header > h3 > .noti_Container{
+.messages > .block-flat > .header > h3 .icon{
     background: url($image-font-path + 'comment-text-outline_MESSAGES.png'); 
 }
 
-.scoring-tools > .block-flat > .header > h3{
+.scoring-tools > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'star-half_SCORING TOOLS.png'); 
 }
 
-.recent-items > .block-flat > .header > h3{
+.recent-items > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'clock_RECENT ITEMS.png'); 
 }
 
-.fund-list > .block-flat > .header > h3{
+.fund-list > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'chart-bar_FUNDS.png'); 
 }
 
-.whats-new > .block-flat > .header > h3{
+.whats-new > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'plus_ADD ICON.png'); 
 }
 
-.reports > .block-flat > .header > h3{
+.reports > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'chart-bar_FUNDS.png'); 
 }
 
-.fund-lookup > .block-flat > .header > h3{
+.fund-lookup > .block-flat > .header > h3.with-image-icon{
     background: url($image-font-path + 'chart-bar_FUNDS.png'); 
 }
 
 
  @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
-.dashboard-section > .block-flat > .header > h3.with-icon{
-    text-indent: 0;
-}
-
-.review > .block-flat > .header > h3{
-    background: none;
-}
-
-/*.messages > .block-flat > .header > h3{
-    background: none;
-}*/
-    
-.messages > .block-flat > .header > h3 > .noti_Container{
-    background: none;
-}
-
-.scoring-tools > .block-flat > .header > h3{
-    background: none;
-}
-
-.recent-items > .block-flat > .header > h3{
-    background: none;
-}
-
-.fund-list > .block-flat > .header > h3{
-    background: none; 
-}
-
-.whats-new > .block-flat > .header > h3{
-    background: none;
-}
-
-.reports > .block-flat > .header > h3{
-    background: none;
-}
-
-.fund-lookup > .block-flat > .header > h3{
-    background: none; 
-}
+    .dashboard-section > .block-flat > .header > h3{
+        text-indent: 0;
+    }
     
 }
 /*end main dashboard*/
