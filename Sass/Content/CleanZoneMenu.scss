@@ -5,6 +5,20 @@
 /*social colors*/
 /*Functions*/
 
+$navbar-focus-bg:               #36A3FF !default;
+$dropdown-menu-hover-bg:        #2391ed !default;
+$leftnav-default-bg:            #212121 !default;
+$leftnav-nav-bg:                #333333 !default; /*color of sub links when not collapsed*/
+$leftnav-button-hover-bg:       #23252A !default;
+$sidebar-bg:                    #212121 !default;
+$sidebar-collapsebutton-bg: $sidebar-bg;
+$leftnav-hover-bg:              #313131 !default;
+$leftnav-flyout-hover-bg:       $leftnav-hover-bg;
+$leftnav-sep-top-color:         #32353e !default;
+$leftnav-sep-bottom-color:      #1a1c20 !default;
+$collapsebutton-top-separator:  #131519 !default;
+
+
 a {
   color: #3380FF;
   text-decoration: none;
@@ -103,7 +117,7 @@ ul {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
-  background-color: #36a3ff;
+  background-color: $navbar-focus-bg;
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
@@ -304,7 +318,7 @@ ul {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-menu li > a:hover {
-  background-color: #2391ed;
+  background-color: $dropdown-menu-hover-bg;
   background-image: none;
   color: #FFF;
 }
@@ -323,13 +337,13 @@ ul {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-nav > .open > a:focus {
-  background-color: #36A3FF;
+  background-color: $navbar-focus-bg;
   color: #FFF;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #36A3FF;
+  background-color: $navbar-focus-bg;
   color: #FFF;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -481,7 +495,7 @@ body.modal-open,
 }
 /*Vertical Navigation*/
 .cl-sidebar {
-  background: #272930;
+  background: $sidebar-bg;
   position: absolute;
   width: 216px;
   z-index: 2;
@@ -503,13 +517,14 @@ body.modal-open,
   border-bottom: 1px solid #2f323a;
 }
 .cl-vnavigation .parent a {
-  background: url("../content/images/arrow.png") no-repeat scroll right 14px top 20px transparent;
+  background: url("../content/images/arrow.png") no-repeat scroll right 14px top 17px transparent;
 }
+
 .cl-vnavigation li a {
-  border-top: 1px solid #32353e;
-  border-bottom: 1px solid #1a1c20;
+  border-top: 1px solid $leftnav-sep-top-color;
+  border-bottom: 1px solid $leftnav-sep-bottom-color;
   display: block;
-  padding: 6px 18px 13px 15px;
+  padding: 6px 18px 6px 15px;
   color: $navbar-default-color;
   font-size: $font-size-base;
   font-weight: 300;
@@ -517,16 +532,22 @@ body.modal-open,
   white-space: nowrap;
 }
 .cl-vnavigation li a:hover {
-  /*background-color: #2a2c34;*/
-      background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+  background-color:  $leftnav-hover-bg;
 }
+
+.collapse-button{
+    padding:7px 9px;
+}
+
+
+
 /*Collapsed Sidebar*/
 .sb-collapsed .cl-sidebar {
   width: 55px;
+    .collapse-button .btn{
+        position: relative;
+        left: -3px;
+    }
 }
 .sb-collapsed #pcont {
   margin-left: 55px;
@@ -571,12 +592,12 @@ body.modal-open,
   transition: margin 500ms linear, font-size 500ms linear;
 }
 .cl-sidebar .collapse-button {
-  background: #1F2126;
+  background: $sidebar-collapsebutton-bg;
   width: 216px;
   /*Mopved from bottom to top*/
   /*position: fixed;*/
   /*bottom: 0;*/
-  border-top: 1px solid #131519;
+  border-top: 1px solid $collapsebutton-top-separator;
   box-shadow: 0 1px 0 #2A2C31 inset;
 }
 .cl-sidebar .collapse-button .search {
@@ -598,19 +619,13 @@ body.modal-open,
   border-radius: 2px;
 }
 .cl-sidebar .collapse-button button:hover {
-  /*background: #23252A;*/
-  /*possibly need a custom mixin*/
-    background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
+  background: $leftnav-button-hover-bg;
 
 }
 #cl-wrapper.fixed-menu .menu-space {
   position: fixed;
   width: 216px;
-  background: #272930;
+  background: $sidebar-bg;
 }
 #cl-wrapper.fixed-menu .menu-space .content {
   outline: none;
@@ -669,6 +684,7 @@ body.modal-open,
     opacity: 0;
     width: 0;
     height: 0;
+    display: none;
 }
 .sub-menu .dropdown-header {
     color: #c0c0c0;
@@ -677,7 +693,7 @@ body.modal-open,
 #sub-menu-nav ul {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.22);
   color: $navbar-default-color;
-  background: #272930;
+  background: $sidebar-bg;
   padding: 5px 0;
   min-width: 190px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
@@ -704,6 +720,9 @@ body.modal-open,
 }
 #sub-menu-nav ul li {
   list-style: none;
+  a span {
+      margin-left: 15px;
+  }
 }
 #sub-menu-nav ul li a {
   margin-right: -1px;
@@ -717,13 +736,8 @@ body.modal-open,
   padding: 6px 20px 6px 31px;
 }
 #sub-menu-nav ul li a:hover {
-  /*background-color: #2391ED;*/
+  background-color: $leftnav-flyout-hover-bg;
   color: $navbar-default-color;
-      background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3))  !important;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3) )  !important;
 }
 #sub-menu-nav ul:after {
   background: url(../images/menu-tail-left.png) no-repeat right 10px;
@@ -746,17 +760,17 @@ body.modal-open,
   display: inline-block;
 }
 .cl-vnavigation li ul {
-  background-color: #1A1C20;
+  background-color: $leftnav-nav-bg;
   display: none;
   margin: 0;
   padding: 0;
   padding-top: 4px;
 }
 .cl-vnavigation .parent ul li:last-child {
-  padding-bottom: 13px;
+  /*padding-bottom: 13px;*/
 }
 .cl-vnavigation .parent ul li {
-  background-color: #1a1c20;
+  background-color: $leftnav-nav-bg;
   list-style: none;
 }
 .cl-vnavigation .parent ul li.dropdown-header {
@@ -766,27 +780,27 @@ body.modal-open,
   font-size: $font-size-small;
   background-image: none;
   padding: 7px 18px 7px 42px;
-  background-color: #1a1c20;
+  background-color: $leftnav-nav-bg;
 }
 .cl-vnavigation .parent ul li.active a {
-  background-color: #1e2025;
+  background-color: $leftnav-hover-bg;
   border-left: 1px solid #2494F2;
 }
 .cl-vnavigation .parent ul li a:hover {
-  background-color: #1e2025;
+  background-color: $leftnav-hover-bg;
 }
 .cl-vnavigation .parent ul li a:first-child {
   border-top: 0;
 }
 .cl-vnavigation .active > a {
-  background: #2A2C34;
+  background: $leftnav-default-bg;
   border-left: 1px solid #2494F2;
 }
 .cl-vnavigation .selected:hover a {
   background-color: #2494F2;
 }
 .cl-vnavigation .selected:hover ul a {
-  background-color: #1A1C20;
+  background-color: $leftnav-nav-bg;
 }
 body {
   height: 100%;
@@ -900,74 +914,6 @@ body {
 
 .cl-mcont .block .content {
   padding: 20px;
-}
-.cl-mcont .block .stat-data,
-.cl-mcont .block-flat .stat-data {
-  padding: 10px;
-  float: left;
-  width: 50%;
-}
-.cl-mcont .block .stat-data h2,
-.cl-mcont .block-flat .stat-data h2 {
-  margin: 0 0 5px 0;
-}
-.cl-mcont .block .stat-data span,
-.cl-mcont .block-flat .stat-data span {
-  font-size: 18px;
-}
-.cl-mcont .block .stat-data .stat-blue,
-.cl-mcont .block-flat .stat-data .stat-blue {
-  background: #43A0F2;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  text-align: center;
-  color: #FFF;
-  padding: 20px 10px;
-}
-.cl-mcont .block .stat-data .stat-number,
-.cl-mcont .block-flat .stat-data .stat-number {
-  border-bottom: 1px solid #dadada;
-}
-.cl-mcont .block .stat-data .stat-number:last-child,
-.cl-mcont .block-flat .stat-data .stat-number:last-child {
-  border-bottom: 0;
-}
-.cl-mcont .block .stat-data .stat-number div,
-.cl-mcont .block-flat .stat-data .stat-number div {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 5px 5px;
-  font-size: 16px;
-  line-height: 20px;
-}
-.cl-mcont .block .stat-data .stat-number h2,
-.cl-mcont .block-flat .stat-data .stat-number h2 {
-  margin: 0;
-  font-size: 35px;
-  color: #444;
-  font-weight: 300;
-}
-.cl-mcont .block .stat-data .stat-number span,
-.cl-mcont .block-flat .stat-data .stat-number span {
-  font-size: $font-size-base;
-}
-.block .fact-data,
-.widget-block .fact-data,
-.block-flat .fact-data {
-  margin: 25px 0;
-  padding: 0 20px;
-  display: inline-block;
-  width: 49%;
-  vertical-align: top;
-}
-.block .total-data,
-.widget-block .total-data,
-.block-flat .total-data {
-  padding: 15px;
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-  position: relative;
 }
 .block .dropdown-menu,
 .widget-block .dropdown-menu,
@@ -1316,7 +1262,7 @@ body {
   /*end - dropdown*/
   .cl-sidebar,
   .sb-collapsed .cl-sidebar {
-    background: none repeat scroll 0 0 #272930;
+    background: none repeat scroll 0 0 $sidebar-bg;
     width: 100%;
     position: relative;
     z-index: 1020;
