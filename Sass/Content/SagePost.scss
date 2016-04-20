@@ -246,6 +246,17 @@ h1, .h1 { font-family: $font-family-bold; }
     }
 }
 
+.uniform-spacing-for-scrollable ul, h5, li{
+    padding: 5px !important;
+    margin: 5px !important;
+    font-size: 19px !important;
+    font-weight: 300 !important;
+    line-height: 21px !important;
+}
+.uniform-spacing-for-scrollable ul{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 
 
 
