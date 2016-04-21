@@ -282,6 +282,9 @@ var App = function () {
         });
       }
       
+      setTimeout(function () {
+            toggleSideBar();
+      }, 500);
     },
       
     //*Pages Javascript Methods*/
@@ -290,6 +293,8 @@ var App = function () {
       toggleSideBar();
     }
     
+
+
     
   };
  
