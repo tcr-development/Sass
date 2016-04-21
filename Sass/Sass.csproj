@@ -77,6 +77,7 @@
     <Content Include="Content\CleanZoneMenu.scss" />
     <Content Include="Dashboard.html" />
     <Content Include="gulpfile.js" />
+    <Content Include="Login.html" />
     <Content Include="packages.config" />
     <Content Include="src\content\fonts\font-awesome-4\css\font-awesome.css" />
     <Content Include="src\content\fonts\font-awesome-4\css\font-awesome.min.css" />

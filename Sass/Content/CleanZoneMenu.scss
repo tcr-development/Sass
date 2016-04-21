@@ -1,10 +1,8 @@
-/*CONFIG AND GENERAL STYLE*/
-/*General colors palette*/
-/*General elements*/
-/*colors palette*/
-/*social colors*/
-/*Functions*/
-
+ /*General elements*/
+ /*colors palette*/
+ /*social colors*/
+ /*Functions*/
+ 
 $navbar-focus-bg:               #36A3FF !default;
 $dropdown-menu-hover-bg:        #2391ed !default;
 $leftnav-default-bg:            #212121 !default;
@@ -105,7 +103,7 @@ ul {
   height: auto;
 }
 .navbar-brand .wealthstation{
-    color: #D2F5FF;
+  color: #D2F5FF;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -519,7 +517,6 @@ body.modal-open,
 .cl-vnavigation .parent a {
   background: url("../content/images/arrow.png") no-repeat scroll right 14px top 17px transparent;
 }
-
 .cl-vnavigation li a {
   border-top: 1px solid $leftnav-sep-top-color;
   border-bottom: 1px solid $leftnav-sep-bottom-color;
@@ -532,19 +529,15 @@ body.modal-open,
   white-space: nowrap;
 }
 .cl-vnavigation li a:hover {
-  background-color:  $leftnav-hover-bg;
+  background-color: $leftnav-hover-bg;
 }
-
 .collapse-button{
     padding:7px 9px;
-}
-
-
-
+ }
 /*Collapsed Sidebar*/
 .sb-collapsed .cl-sidebar {
   width: 55px;
-    .collapse-button .btn{
+      .collapse-button .btn{
         position: relative;
         left: -3px;
     }
@@ -593,9 +586,8 @@ body.modal-open,
 }
 .cl-sidebar .collapse-button {
   background: $sidebar-collapsebutton-bg;
-  width: 216px;
-  /*Mopved from bottom to top*/
   /*position: fixed;*/
+  width: 216px;
   /*bottom: 0;*/
   border-top: 1px solid $collapsebutton-top-separator;
   box-shadow: 0 1px 0 #2A2C31 inset;
@@ -620,7 +612,6 @@ body.modal-open,
 }
 .cl-sidebar .collapse-button button:hover {
   background: $leftnav-button-hover-bg;
-
 }
 #cl-wrapper.fixed-menu .menu-space {
   position: fixed;
@@ -921,6 +912,74 @@ body {
 
 .cl-mcont .block .content {
   padding: 20px;
+}
+.cl-mcont .block .stat-data,
+.cl-mcont .block-flat .stat-data {
+  padding: 10px;
+  float: left;
+  width: 50%;
+}
+.cl-mcont .block .stat-data h2,
+.cl-mcont .block-flat .stat-data h2 {
+  margin: 0 0 5px 0;
+}
+.cl-mcont .block .stat-data span,
+.cl-mcont .block-flat .stat-data span {
+  font-size: 18px;
+}
+.cl-mcont .block .stat-data .stat-blue,
+.cl-mcont .block-flat .stat-data .stat-blue {
+  background: #43A0F2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align: center;
+  color: #FFF;
+  padding: 20px 10px;
+}
+.cl-mcont .block .stat-data .stat-number,
+.cl-mcont .block-flat .stat-data .stat-number {
+  border-bottom: 1px solid #dadada;
+}
+.cl-mcont .block .stat-data .stat-number:last-child,
+.cl-mcont .block-flat .stat-data .stat-number:last-child {
+  border-bottom: 0;
+}
+.cl-mcont .block .stat-data .stat-number div,
+.cl-mcont .block-flat .stat-data .stat-number div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.cl-mcont .block .stat-data .stat-number h2,
+.cl-mcont .block-flat .stat-data .stat-number h2 {
+  margin: 0;
+  font-size: 35px;
+  color: #444;
+  font-weight: 300;
+}
+.cl-mcont .block .stat-data .stat-number span,
+.cl-mcont .block-flat .stat-data .stat-number span {
+  font-size: $font-size-base;
+}
+.block .fact-data,
+.widget-block .fact-data,
+.block-flat .fact-data {
+  margin: 25px 0;
+  padding: 0 20px;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+.block .total-data,
+.widget-block .total-data,
+.block-flat .total-data {
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  position: relative;
 }
 .block .dropdown-menu,
 .widget-block .dropdown-menu,
