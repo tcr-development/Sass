@@ -1,0 +1,114 @@
+﻿
+#btn-login{
+    background-color:   #A2CB00 !important;
+}
+
+.login-page {
+    display: table; width: 100%; height: 100%; position: absolute;
+
+    #pcont{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#207cca+28,207cca+28,2989d8+31,f7f7f7+100 */
+        background: #207cca; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #207cca 28%, #207cca 28%, #2989d8 31%, #f7f7f7 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #2295F3 28%,#2295F3 28%,#2989d8 31%,#f7f7f7 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #2295F3 28%,#2295F3 28%,#148DF1 31%,#f7f7f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        .cl-mcont{
+            height:100%;
+            position: relative;
+        }
+    }
+    .row-fluid{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);  
+        transform: translate(-50%, -50%); 
+    }
+
+}
+
+
+.login-brand{
+  float: left;
+  padding: 11.5px 5px;
+  font-size: 24px;
+  line-height: 27px;
+  height: 50px; 
+
+  margin-bottom: 50px !important; 
+  width: 100%; 
+  text-align: center;
+}
+
+.form-login{
+    margin: auto !important; 
+    width: 350px;
+    .input-group{
+        width: 100%; 
+        border: none; 
+        border-bottom: 1px solid #ffffff;
+    } 
+    .input-group-addon{
+        border: none; background: none;
+        color: #ffffff !important; 
+        background: none;
+    }
+    .form-control{
+        border: none;
+        width: 100%;
+        color: #ffffff !important; 
+        background: none;
+    }
+    .credentials{
+        margin-bottom: 15px;
+    }
+    .btn-login{
+        margin: 0 !important; 
+        margin-bottom: 15px !important; 
+        width: 100% !important;
+    }
+    .login-container{
+        margin: auto !important; 
+        width: 100%;
+        text-align: center;
+    }
+    a {
+        color: #ffffff;
+    }
+}
+
+/*login screen input placeholder*/
+.form-login > input {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.form-login .form-control {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.form-login ::-webkit-input-placeholder {
+   color: #fff !important;
+   font-style: italic;
+
+}
+
+.form-login :-moz-placeholder { /* Firefox 18- */
+   color: #fff  !important;
+   font-style: italic;
+}
+
+.form-login ::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff  !important;
+   font-style: italic;
+
+}
+
+.form-login :-ms-input-placeholder {  
+   color: #fff !important;
+   font-style: italic;
+}
+/*end login screen input placeholder*/

@@ -3,6 +3,7 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 $image-font-path: "../content/images/";
+$font-path: '../content/fonts/';
 
 //== Colors
 //
@@ -81,7 +82,7 @@ $headings-color:          inherit !default;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../content/fonts/bootstrap/") !default;
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", $font-path + "bootstrap/") !default;
 
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;

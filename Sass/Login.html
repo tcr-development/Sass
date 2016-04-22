@@ -7,172 +7,51 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.png">
     <title>WealthStation | PlanAdvisor</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="dist/css/app.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://tagliala.github.io/vectoriconsroundup/css/materialdesignicons.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="dist/css/nanoscroller.css" />
 </head>
 <body>
-    <!-- Fixed navbar -->
-    <div id="head-nav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="fa fa-gear"></span>
-                </button>
-                <a class="navbar-brand" href="#"><span class="text-nowrap"><span class="wealthstation">WealthStation</span> | <strong>PlanAdvisor</strong></span></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right user-nav">
-                    <li class="dropdown profile_menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-user"></i>&nbsp;&nbsp;Jeff Hanneman</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Messages</a></li>
-                            <li class="divider"></li>
-                            <li><a href="Login.html">Sign Out</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right not-nav">
-                    <li class="button dropdown">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-comments"></i></a>
-                        <ul class="dropdown-menu messages">
-                            <li>
-                                <div class="nano nscroller">
-                                    <div class="content nano-content">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user"></i><span class="date pull-right">13 Sept.</span> <span class="name">Daniel</span> I'm following you, and I want your money!
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user"></i><span class="date pull-right">20 Oct.</span><span class="name">Adam</span> is now following you
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user"></i><span class="date pull-right">2 Nov.</span><span class="name">Michael</span> is now following you
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user"></i><span class="date pull-right">2 Nov.</span><span class="name">Lucy</span> is now following you
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <ul class="foot"><li><a href="#">View all messages </a></li></ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="button dropdown">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span class="bubble">2</span></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="nano nscroller ">
-                                    <div class="content nano-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-cloud-upload info"></i><b>Daniel</b> is now following you <span class="date">2 minutes ago.</span></a></li>
-                                            <li><a href="#"><i class="fa fa-male success"></i> <b>Michael</b> is now following you <span class="date">15 minutes ago.</span></a></li>
-                                            <li><a href="#"><i class="fa fa-bug warning"></i> <b>Mia</b> commented on post <span class="date">30 minutes ago.</span></a></li>
-                                            <li><a href="#"><i class="fa fa-credit-card danger"></i> <b>Andrew</b> killed someone <span class="date">1 hour ago.</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <ul class="foot"><li><a href="#">View all activity </a></li></ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="button"><a href="javascript:;" class="speech-button"><i class="fa fa-microphone"></i></a></li>
-                </ul>
-            </div><!--/.nav-collapse animate-collapse -->
-        </div>
-    </div>
-
-    <div id="cl-wrapper" class="fixed-menu">
-        <div class="cl-sidebar" data-position="right" data-step="1" data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">
-            <div class="cl-toggle"><i class="fa fa-bars"></i></div>
-
-            <div class="cl-navblock">
-                <div class="menu-space">
-                    <div class="content nano-content">
-                        <div class="text-right collapse-button" style="">
-                            <input type="text" class="form-control search" placeholder="Search..." />
-                            <button id="sidebar-collapse" class="btn btn-default" style=""><i style="color:#fff;" class="fa fa-angle-left"></i></button>
-                        </div>
-                        <ul class="cl-vnavigation">
-                            <li><a href="Index.html"><i class="menu-fa fa fa-home "></i><span>Home</span></a></li>
-                            <li><a href="StyleGuide.html"><i class="menu-fa fa fa-fw fa-html5"></i><span>Style Guide</span></a></li>
-                            <li><a href="Dashboard.html"><i class="menu-fa fa fa-fw fa-dashboard"></i><span>Dashboard</span></a></li>
-                            <li><a href="Admin.html"><i class="menu-fa fa fa-fw fa-clipboard"></i><span>Administration</span></a></li>
-                            <li><a href="Fees.html"><i class="menu-fa fa fa-fw fa-bank"></i><span>Fees</span></a></li>
-                            <li><a href="FundResearch.html"><i class="menu-fa fa fa-fw fa-sliders"></i><span>Fund Research</span></a></li>
-                            <li><a href="Plans.html"><i class="menu-fa fa fa-fw fa-cubes"></i><span>Plans</span></a></li>
-                            <li><a href="Proposals.html"><i class="menu-fa fa fa-fw fa-briefcase"></i><span>Proposals</span></a></li>
-                            <li>
-                                <a href="Reports.html"><i class="menu-fa fa fa-fw fa-bar-chart-o"></i><span>Reports</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="Templates.html">Templates</a></li>
-                                    <li><a href="Files.html">Files</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container-fluid" id="pcont" style="/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#207cca+28,207cca+28,2989d8+31,f7f7f7+100 */
-background: #207cca; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #207cca 28%, #207cca 28%, #2989d8 31%, #f7f7f7 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #207cca 28%,#207cca 28%,#2989d8 31%,#f7f7f7 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #207cca 28%,#207cca 28%,#2989d8 31%,#f7f7f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */">
-            <div class="cl-mcont">
-                <h1>Login</h1>
+    <div class="login-page">
 
 
+        <div class="container-fluid" id="pcont">
+            <div class="cl-mcont" >
 
-                <div class="">
-                    <div  style="width: 100%; ">
-                        <div class="login">
-                            <div class="form-group " style="margin: auto !important; width: 300px; ">
-                                <div style="display: flex;">
+                        <div class="row-fluid login">
+                            <div class="form-group form-login">
+                                <div>
                                     <fieldset>
                                         <div class="control-group">
                                             <div class="controls">
-                                                <div class="input-prepend input-group" style="width: 100%; border: none; border-bottom: 1px solid #ffffff">
-                                                    <span class="add-on input-group-addon primary" style="border: none; background: none"><span class="fa fa-fw fa-envelope" style="color: #ffffff !important; background: none"></span></span>
-                                                    <input type="text" name="userid" id="userid" class="form-control" placeholder="Your email"  style="border: none;width: 100%;color: #ffffff !important; background: none"/>
+                              
+                                                <div class="login-brand" style="width: 100%;"><span class="text-nowrap"><span class="logo-wealthstation">WealthStation</span><span class="logo-planadvisor"> | <strong>PlanAdvisor</strong></span></span></div>
+                                                
+                                                <div class="credentials">
+                                                    <div class="input-prepend input-group">
+                                                        <span class="add-on input-group-addon primary"><span class="fa fa-fw fa-envelope"></span></span>
+                                                        <input type="text" name="userid" id="userid" class="form-control" placeholder="Your email" />
+                                                    </div>
+                                                    <div class="input-prepend input-group">
+                                                        <span class="add-on input-group-addon primary"><span class="fa fa-fw fa-lock"></span></span>
+                                                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
+                                                    </div>
                                                 </div>
-                                                <div class="input-prepend input-group" style="width: 100%; border: none; border-bottom: 1px solid #ffffff">
-                                                    <span class="add-on input-group-addon primary" style="border: none; background: none"><span class="fa fa-fw fa-lock" style="color: #ffffff !important; background: none"></span></span>
-                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" style="border: none;width: 100%;color: #ffffff !important; background: none" />
+
+                                                <div class="login-container">
+                                                    <input type="button" class="btn btn-default btn-login" name="btn-login" id="btn-login" value="Login" />
                                                 </div>
-                                                <div style="margin: auto !important;width: 300px;">
-                                                    <input type="button" class="btn btn-default" style="background-color: #A2CB00 !important; margin: 0; margin-top: 15px; margin-bottom: 15px; width: 100%;" name="btn-login" id="btn-login" value="Login" />
+                                                <div class="login-container">
+                                                    <input type="button" class="btn btn-primary btn-login" name="btn-register" id="btn-register" value="Register" />
                                                 </div>
-                                                <div style="margin: auto !important;width: 100%;">
-                                                    <input type="button" class="btn btn-primary" style="margin: 0; margin-top: 0; margin-bottom: 15px; width: 100%;" name="btn-login" id="btn-login" value="Register" />
-                                                </div>
-                                                <div style="margin: auto !important;width: 100%;text-align: center;">
-                                                    <a href="forgotpassword.html" >Forgot password?</a>
+                                                <div class="login-container">
+                                                    <a href="forgotpassword.html">Forgot password?</a>
                                                 </div>
 
                                             </div>
@@ -180,8 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', end
 
                                     </fieldset>
                                 </div>
-                            </div>
-                        </div>
+
                     </div>
 
 
@@ -198,24 +76,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', end
 </body>
 </html>
 
-<script type="text/javascript" src="dist/javascripts/jquery-1.10.0.js"></script>
-<script type="text/javascript" src="dist/javascripts/jquery.nanoscroller.js"></script>
-<script type="text/javascript" src="dist/javascripts/sage/general.js"></script>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript">
-            $(document).ready(function () {
-                //initialize the javascript
-                App.init();
-
-                //This is the tour code
-                //introJs().setOption('showBullets', false).start();
-
-            });
-</script>
-<script src="dist/javascripts/bootstrap.min.js"></script>
 
 
 

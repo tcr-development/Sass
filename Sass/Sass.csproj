@@ -141,6 +141,8 @@
     <Content Include="src\content\fonts\RobotoSlab-Bold.ttf" />
     <Content Include="src\content\fonts\RobotoSlab-Regular.ttf" />
     <Content Include="src\content\images\Thumbs.db" />
+    <Content Include="Content\Login.scss" />
+    <Content Include="Content\Dashboard.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
