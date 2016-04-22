@@ -1,16 +1,7 @@
 var App = function () {
 
   var config = {//Basic Config
-    tooltip: true,
-    popover: true,
-    nanoScroller: true,
-    nestableLists: true,
-    hiddenElements: true,
-    bootstrapSwitch:true,
-    dateTime:true,
-    select2:true,
-    tags:true,
-    slider:true
+    nanoScroller: true
   }; 
   
 
@@ -26,37 +17,8 @@ var App = function () {
           $(".fa",b).removeClass("fa-angle-left").addClass("fa-angle-right");
           w.addClass("sb-collapsed");
         }
-        //updateHeight();
       }
-      
-      //function updateHeight(){
-      //  if(!$("#cl-wrapper").hasClass("fixed-menu")){
-      //    var button = $("#cl-wrapper .collapse-button").outerHeight();
-      //    var navH = $("#head-nav").height();
-      //    //var document = $(document).height();
-      //    var cont = $("#pcont").height();
-      //    var sidebar = ($(window).width() > 755 && $(window).width() < 963)?0:$("#cl-wrapper .menu-space .content").height();
-      //    var windowH = $(window).height();
-          
-      //    if(sidebar < windowH && cont < windowH){
-      //      if(($(window).width() > 755 && $(window).width() < 963)){
-      //        var height = windowH;
-      //      }else{
-      //        var height = windowH - button - navH;
-      //      }
-      //    }else if((sidebar < cont && sidebar > windowH) || (sidebar < windowH && sidebar < cont)){
-      //      var height = cont + button + navH;
-      //    }else if(sidebar > windowH && sidebar > cont){
-      //      var height = sidebar + button;
-      //    }  
-          
-      //    // var height = ($("#pcont").height() < $(window).height())?$(window).height():$(document).height();
-      //    $("#cl-wrapper .menu-space").css("min-height",height);
-      //  }else{
-      //    $("#cl-wrapper .nscroller").nanoScroller({ preventPageScrolling: true });
-      //  }
-      //}
-        
+
   return {
    
     init: function (options) {
@@ -70,7 +32,6 @@ var App = function () {
       
       $(".cl-vnavigation li ul li.active").each(function(){
         $(this).parent().show().parent().addClass("open");
-        //setTimeout(function(){updateHeight();},200);
       });
       
       $(".cl-vnavigation").delegate(".parent > a","click",function(e){
@@ -86,9 +47,7 @@ var App = function () {
           }else{
             p.addClass("open");
           }
-          //var menuH = $("#cl-wrapper .menu-space .content").height();
-          // var height = ($(document).height() < $(window).height())?$(window).height():menuH;
-           //updateHeight();
+
           if ($("#cl-wrapper .nscroller")) {
              $("#cl-wrapper .nscroller").nanoScroller({ preventPageScrolling: true });
           }
@@ -137,13 +96,7 @@ var App = function () {
         }
         
         
-      }else{
-        $(window).resize(function(){
-          //updateHeight();
-        }); 
-        //updateHeight();
       }
-
       
       /*SubMenu hover */
         var tool = $("<div id='sub-menu-nav' style='position:fixed;z-index:9999;'></div>");
@@ -158,14 +111,12 @@ var App = function () {
             }
             
             tool.appendTo("body");
-            //var top = ($(_this).offset().top + 8) - $(window).scrollTop();
             var top = ($(_this).offset().top) - $(window).scrollTop();
             var left = $(_this).width();
             
             tool.css({
                'top': top,
                'left': left
-              //'left': left + 8
             });
             tool.html('<ul class="sub-menu">' + menu.html() + '</ul>');
             tool.show();
@@ -218,69 +169,12 @@ var App = function () {
           }
         });
         
-        $(".cl-vnavigation li").on('touchstart click', function(){
-          //alert($(window).width());
-        });
-        
-      $(window).resize(function(){
-        //updateHeight();
-      });
-
-      var domh = $("#pcont").height();
-      $(document).bind('DOMSubtreeModified', function(){
-        var h = $("#pcont").height();
-        if(domh != h) {
-          //updateHeight();
-        }
-      });
-      
-      /*Return to top*/
-      var offset = 220;
-      var duration = 500;
-      var button = $('<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>');
-      button.appendTo("body");
-      
-      jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-        }
-      });
-    
-      jQuery('.back-to-top').click(function(event) {
-          event.preventDefault();
-          jQuery('html, body').animate({scrollTop: 0}, duration);
-          return false;
-      });
-      
-      /*Tooltips*/
-      if(config.tooltip){
-        $('.ttip, [data-toggle="tooltip"]').tooltip();
-      }
-      
-      /*Popover*/
-      if(config.popover){
-        $('[data-popover="popover"]').popover();
-      }
 
       /*NanoScroller*/      
       if(config.nanoScroller){
         $(".nscroller").nanoScroller();     
       }
 
-      /*Bind plugins on hidden elements*/
-      if(config.hiddenElements){
-      	/*Dropdown shown event*/
-        $('.dropdown').on('shown.bs.dropdown', function () {
-          $(".nscroller").nanoScroller();
-        });
-          
-        /*Tabs refresh hidden elements*/
-        $('.nav-tabs').on('shown.bs.tab', function (e) {
-          $(".nscroller").nanoScroller();
-        });
-      }
       
       setTimeout(function () {
             toggleSideBar();
@@ -292,15 +186,8 @@ var App = function () {
     toggleSideBar: function(){
       toggleSideBar();
     }
-    
 
-
-    
   };
  
 }();
 
-$(function(){
-  //$("body").animate({opacity:1,'margin-left':0},500);
-  $("body").css({opacity:1,'margin-left':0});
-});
