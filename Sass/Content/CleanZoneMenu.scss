@@ -551,7 +551,7 @@ body.modal-open,
   border-bottom: 1px solid #2f323a;
 }
 .cl-vnavigation .parent a {
-  background: url("../content/images/arrow.png") no-repeat scroll right 14px top 17px transparent;
+  background: url($image-font-path + "arrow.png") no-repeat scroll right 14px top 17px transparent;
 }
 .cl-vnavigation li a {
   border-top: 1px solid $leftnav-sep-top-color;
